@@ -1,2 +1,9 @@
 # react-interview-challenge
-um desafio de projeto envolvendo react usado em entrevistas
+Um desafio de projeto envolvendo React usado em entrevistas.<br/><br/>
+Desenvolva uma aplicação em que:
+- o usuário pode clicar em qualquer lugar da página.
+- deve-se renderizar um pequeno círculo na posição clicada.
+- a cada clique, mantém-se os círculos já criados e renderiza-se um novo.
+- crie duas funcionalidades para a aplicação:
+    - desfazer (undo)
+    - refazer (redo)
