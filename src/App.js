@@ -37,12 +37,12 @@ function App() {
     event.stopPropagation();
     console.log("Redo");
 
-    if (list.length === 0) {
+    if (undid.length === 0) {
       return;
     }
 
     const recoveredDot = undid[undid.length - 1];
-    setList((prev) => {
+    setUndid((prev) => {
       const newArr = [...prev].slice(0, -1);
       return newArr;
     });
@@ -53,9 +53,9 @@ function App() {
     <div id="page" onClick={handleClick}>
       <button onClick={handleUndo}>Desfazer</button>
       <button onClick={handleRedo}>Refazer</button>
-      {list.map((item) => (
+      {list.map((item, index) => (
         <span
-          key={item.clientX}
+          key={index}
           className="dot"
           style={{ left: item.clientX, top: item.clientY }}
         />
